@@ -22,7 +22,7 @@ script:
   - git config user.email "${GIT_EMAIL}"
   - git add .
   - git commit -m "Update"
-  - git push --force --quiet "https://${GH_TOKEN}@${DOC_REF}" master:master
+  - git push --force --quiet "https://${GH_TOKEN}@${DOC_REF}" master:gh-pages
 
 # after_script:
 
@@ -30,6 +30,3 @@ branches:
   only:
     - master
 
-env:
- global:
-   - DOC_REF: github.com/jerryc127/hexo-theme-butterfly-docs.git
