@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "update": "git init && git add . && git commit -m 'update' && git push -u origin master"
+    "update": "git init && git add . && git commit -m 'update' && git push -u origin master",
+    "cname": "bash cname.sh"
 
   },
   "keywords": [

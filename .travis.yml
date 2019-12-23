@@ -14,6 +14,7 @@ install:
 
 before_script:
   - npm run build
+  - npm run cname
 
 script:
   - cd docs/.vuepress/dist
