@@ -1,0 +1,34 @@
+language: node_js
+node_js: stable
+
+sudo: required
+
+# Travis-CI Caching
+cache:
+  directories:
+    - node_modules
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+before_script:
+
+script:
+  - cd docs/.vuepress/dist
+  - git init
+  - git config user.name "${GIT_NAME}"
+  - git config user.email "${GIT_EMAIL}"
+  - git add .
+  - git commit -m "Update"
+  - git push --force --quiet "https://${GH_TOKEN}@${DOC_REF}" master:master
+
+# after_script:
+
+branches:
+  only:
+    - gh-pages
+
+env:
+ global:
+   - DOC_REF: github.com/jerryc127/hexo-theme-butterfly-docs.git

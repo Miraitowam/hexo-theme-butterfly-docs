@@ -1,0 +1,27 @@
+
+{
+  "name": "hexo-theme-butterfly",
+  "version": "1.0.0",
+  "description": "A Hexo Theme: Butterfly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "update": "git init && git add . && git commit -m 'update' && git push -u origin master"
+
+  },
+  "keywords": [
+    "hexo",
+    "hexo-theme",
+    "butterfly"
+  ],
+  "author": "Jerry",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "@vuepress/plugin-medium-zoom": "^1.2.0",
+    "@vuepress/plugin-nprogress": "^1.2.0",
+    "vuepress": "^1.2.0"
+  }
+}
