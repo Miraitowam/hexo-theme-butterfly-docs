@@ -1,7 +1,7 @@
 module.exports = {
   title: 'hexo-theme-butterfly',
   description: 'A Hexo Theme: Butterfly',
-  base: '/',
+  base: '/hexo-theme-butterfly-docs/',
   port: 4000,
   themeConfig: {
     repo: 'jerryc127/hexo-theme-butterfly',
