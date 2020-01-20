@@ -152,7 +152,7 @@ Flink:
 ## 音樂
 
 音樂界面使用了插件[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer)。
-使用方法請參考插件的文檔
+使用方法請參考插件的文檔。
 
 音樂頁面只是普通的page頁，按普通頁面操作生成就行。
 
@@ -160,3 +160,5 @@ Flink:
 
 電影界面使用了插件[hexo-douban](https://github.com/mythsman/hexo-douban)。
 使用方法請參考插件的文檔。
+
+**注意：**hexo-douban會主動生成頁面，所以不需要自己創建。對應網頁的top_img可以`butterfly.yml`修改。

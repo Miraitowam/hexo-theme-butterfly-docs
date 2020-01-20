@@ -641,9 +641,88 @@ Any content (support inline tags too.io).
 All parameters are optional.
 ```
 
-具體效果、用法可查看[這裏](https://theme-next.org/docs/tag-plugins/note)
+例如：
 
-### Gallery相冊
+```markdown
+{% note default %}
+default 提示塊標籤
+{% endnote %}
+
+{% note primary no-icon %}
+primary 提示塊標籤
+{% endnote %}
+
+{% note success %}
+success 提示塊標籤
+{% endnote %}
+
+{% note info %}
+info 提示塊標籤
+{% endnote %}
+
+{% note warning %}
+warning 提示塊標籤
+{% endnote %}
+
+{% note danger %}
+danger 提示塊標籤
+{% endnote %}
+```
+
+
+> style: simple
+
+![20200105232825.png](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20200105232825.png)
+
+
+> style: modern
+
+![20200105233018.png](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20200105233018.png)
+
+
+> style: flat
+
+![20200105233145.png](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20200105233145.png)
+
+
+> style: disabled
+
+![20200105233310.png](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20200105233310.png)
+
+### Gallery相冊圖庫
+
+> 2.1.0以上提供
+
+一個圖庫集合。
+
+寫法
+
+```
+<div class="gallery-group-main">
+{% galleryGroup name description link img-url %}
+{% galleryGroup name description link img-url %}
+{% galleryGroup name description link img-url %}
+</div>
+```
+
+- name：圖庫名字
+- description：圖庫描述
+- link：連接到對應相冊的地址
+- img-url：圖庫封面的地址
+
+例如：
+
+```
+<div class="gallery-group-main">
+{% galleryGroup '壁紙' '收藏的一些壁紙' '/Gallery/wallpaper' https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png %}
+{% galleryGroup '漫威' '關於漫威的圖片' '/Gallery/marvel' https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg %}
+{% galleryGroup 'OH MY GIRL' '關於OH MY GIRL的圖片' '/Gallery/ohmygirl' https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg %}
+</div>
+```
+
+![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/20191226003414.png)
+
+###  Gallery相冊
 
 > 2.0.0以上提供
 
